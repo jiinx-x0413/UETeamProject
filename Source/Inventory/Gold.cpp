@@ -4,11 +4,13 @@
 #include "Gold.h"
 
 // Sets default values
-AGold::AGold()
+AGold::AGold() : Amount(0)
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	GoldStaticMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>("Static Mesh Component");
+	GoldStaticMeshComponent->SetupAttachment(RootComponent);
 }
 
 // Called when the game starts or when spawned

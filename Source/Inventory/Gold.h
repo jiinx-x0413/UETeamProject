@@ -24,4 +24,10 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	//varaiable
+public:
+	int32 Amount;
+
+	UPROPERTY(VisibleAnywhere,BlueprintReadOnly,Category = "StaticMesh")
+	class UStaticMeshComponent* GoldStaticMeshComponent;
 };
