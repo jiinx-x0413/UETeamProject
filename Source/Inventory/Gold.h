@@ -7,6 +7,9 @@
 #include "ItemInterface.h"
 #include "Gold.generated.h"
 
+class UStaticMeshComponent;
+class USceneComponent;
+
 UCLASS()
 class INVENTORY_API AGold : public AActor, public IItemInterface
 {
@@ -29,5 +32,8 @@ public:
 	int32 Amount;
 
 	UPROPERTY(VisibleAnywhere,BlueprintReadOnly,Category = "StaticMesh")
-	class UStaticMeshComponent* GoldStaticMeshComponent;
+	TObjectPtr<UStaticMeshComponent> GoldStaticMeshComponent;
+	
+	UPROPERTY(VisibleAnywhere,BlueprintReadOnly,Category = "StaticMesh")
+	TObjectPtr<USceneComponent> SceneComponent;
 };
