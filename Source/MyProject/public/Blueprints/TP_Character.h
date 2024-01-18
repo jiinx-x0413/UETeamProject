@@ -96,7 +96,7 @@ public:
 	void ItemE(const FInputActionValue& Value);
 	void ItemQ(const FInputActionValue& Value);
 	void Reload(const FInputActionValue& Value);
-	void Ability(const FInputActionValue& Value);
+	void Shift(const FInputActionValue& Value);
 
 
 	void Inventory(const FInputActionValue& Value);

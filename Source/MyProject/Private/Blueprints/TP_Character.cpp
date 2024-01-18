@@ -65,7 +65,7 @@ void ATP_Character::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 
 		UIEA->BindAction(IA_TP_Reload, ETriggerEvent::Triggered, this, &ATP_Character::Reload);
 
-		UIEA->BindAction(IA_TP_Ability, ETriggerEvent::Triggered, this, &ATP_Character::Ability);
+		UIEA->BindAction(IA_TP_Ability, ETriggerEvent::Triggered, this, &ATP_Character::Shift);
 
 
 		UIEA->BindAction(IA_TP_Inventory, ETriggerEvent::Triggered, this, &ATP_Character::Inventory);
@@ -78,6 +78,7 @@ void ATP_Character::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 
 void ATP_Character::Move(const FInputActionValue& Value)
 {
+	/*
 	FVector2D Dir = Value.Get<FVector2D>();
 
 	FRotator CameraRotation = GetControlRotation();
@@ -88,15 +89,17 @@ void ATP_Character::Move(const FInputActionValue& Value)
 
 	AddMovementInput(FowardVector, Dir.Y);
 	AddMovementInput(RightVector, Dir.X);
-
+	*/
 }
 
 void ATP_Character::Look(const FInputActionValue& Value)
 {
+	/*
 	FVector2D Rotation = Value.Get<FVector2D>();
 
 	AddControllerYawInput(Rotation.X);
 	AddControllerPitchInput(Rotation.Y);
+	*/
 }
 
 void ATP_Character::LeftMouse(const FInputActionValue& Value)
@@ -135,7 +138,7 @@ void ATP_Character::Reload(const FInputActionValue& Value)
 {
 }
 
-void ATP_Character::Ability(const FInputActionValue& Value)
+void ATP_Character::Shift(const FInputActionValue& Value)
 {
 }
 
