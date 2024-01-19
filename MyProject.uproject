@@ -32,6 +32,10 @@
 		{
 			"Name": "AnimationLocomotionLibrary",
 			"Enabled": true
+		},
+		{
+			"Name": "SkeletalMeshModelingTools",
+			"Enabled": true
 		}
 	]
 }
