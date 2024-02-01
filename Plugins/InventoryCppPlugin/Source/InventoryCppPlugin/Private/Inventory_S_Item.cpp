@@ -2,11 +2,3 @@
 
 
 #include "Inventory_S_Item.h"
-
-Inventory_S_Item::Inventory_S_Item()
-{
-}
-
-Inventory_S_Item::~Inventory_S_Item()
-{
-}

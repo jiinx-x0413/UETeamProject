@@ -5,24 +5,8 @@
 #include "CoreMinimal.h"
 #include "Engine/Texture.h"
 #include "Engine/StaticMesh.h"
+#include "Inventory_E_Item_Types.h"
 #include "Inventory_S_Inventory.generated.h"
-
-UENUM(BlueprintType)
-enum class EItemTypes : uint8
-{
-	Sword    UMETA(DisplayName = "Sword")
-	, Wand    UMETA(DisplayName = "Wand")
-	, Gun    UMETA(DisplayName = "Gun")
-	, Mace    UMETA(DisplayName = "Mace")
-	, Armour    UMETA(DisplayName = "Armour")
-	, Book    UMETA(DisplayName = "Book")
-	, Neckless    UMETA(DisplayName = "Neckless")
-	, Ring    UMETA(DisplayName = "Ring")
-	, HealingPotion    UMETA(DisplayName = "HealingPotion")
-	, Gold    UMETA(DisplayName = "Gold")
-	, Tower    UMETA(DisplayName = "Tower")
-	, ManaPotion   UMETA(DisplayName = "ManaPotion")
-};
 
 USTRUCT(BlueprintType)
 struct FInventory_S_Inventory
@@ -40,7 +24,7 @@ public:
 	UStaticMesh* Static_Mesh;
 
 	UPROPERTY()
-	EItemTypes types;
+	EItemTypes Types;
 
 	UPROPERTY()
 	int PlayerStateIndex;

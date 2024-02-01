@@ -10,7 +10,7 @@
 
 
 // This class does not need to be modified.
-UINTERFACE(MinimalAPI)
+UINTERFACE(Blueprintable)
 class UInventory_ItemInterface : public UInterface
 {
 	GENERATED_BODY()
@@ -26,7 +26,7 @@ class INVENTORYCPPPLUGIN_API IInventory_ItemInterface
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
-	void TakeItemData(FInventory_S_Inventory InventoryData);
+	void TakeItemData(FInventory_S_Inventory InputInventoryData);
 
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void DropItemData(int ItemIndex);
