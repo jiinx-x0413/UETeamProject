@@ -4,6 +4,7 @@
 #include "Inventory_InventoryData.h"
 #include "../Public/Inventory_S_Inventory.h"
 #include "GameFramework/PlayerState.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 AInventory_InventoryData::AInventory_InventoryData()
@@ -32,6 +33,7 @@ void AInventory_InventoryData::Tick(float DeltaTime)
 void AInventory_InventoryData::TakeItemData_Implementation(FInventory_S_Inventory InputInventoryData)
 {
 	InputInventoryData.ItemIndex = InventoryData.Num();
+	;
 	//InputInventoryData.PlayerStateIndex = APlayerState::GetPlayerId;
 	InventoryData.Add(InputInventoryData);
 
