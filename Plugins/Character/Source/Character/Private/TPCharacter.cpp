@@ -80,7 +80,7 @@ void ATPCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 
 void ATPCharacter::Move(const FInputActionValue& Value)
 {
-	FVector2D Dir = Value.Get<FVector2D>();
+	/*FVector2D Dir = Value.Get<FVector2D>();
 
 	FRotator CameraRotation = GetControlRotation();
 	FRotator DirectionRotation = FRotator(0, CameraRotation.Yaw, 0);
@@ -89,16 +89,16 @@ void ATPCharacter::Move(const FInputActionValue& Value)
 	FVector RightVector = UKismetMathLibrary::GetRightVector(DirectionRotation);
 
 	AddMovementInput(FowardVector, Dir.Y);
-	AddMovementInput(RightVector, Dir.X);
+	AddMovementInput(RightVector, Dir.X);*/
 
 }
 
 void ATPCharacter::Look(const FInputActionValue& Value)
 {
-	FVector2D Rotation = Value.Get<FVector2D>();
+	/*FVector2D Rotation = Value.Get<FVector2D>();
 
 	AddControllerYawInput(Rotation.X);
-	AddControllerPitchInput(Rotation.Y);
+	AddControllerPitchInput(Rotation.Y);*/
 }
 
 void ATPCharacter::LeftMouse(const FInputActionValue& Value)
