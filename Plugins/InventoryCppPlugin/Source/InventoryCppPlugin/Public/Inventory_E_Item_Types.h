@@ -13,7 +13,7 @@ enum class EItemTypes : uint8
 	, Mace    UMETA(DisplayName = "Mace")
 	, Armour    UMETA(DisplayName = "Armour")
 	, Book    UMETA(DisplayName = "Book")
-	, Neckless    UMETA(DisplayName = "Neckless")
+	, Neckless    UMETA(DisplayName = "Necklace")
 	, Ring    UMETA(DisplayName = "Ring")
 	, HealingPotion    UMETA(DisplayName = "HealingPotion")
 	, Gold    UMETA(DisplayName = "Gold")
