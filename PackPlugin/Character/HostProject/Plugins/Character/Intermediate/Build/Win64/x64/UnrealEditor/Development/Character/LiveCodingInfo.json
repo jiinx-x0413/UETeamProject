@@ -1,0 +1,19 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.Character.cpp.obj": [
+			"Character.init.gen.cpp.obj",
+			"TPAnimInstance.gen.cpp.obj",
+			"TPCharacter.gen.cpp.obj",
+			"TPGameModeBase.gen.cpp.obj",
+			"TPHUD.gen.cpp.obj",
+			"TPPlayerController.gen.cpp.obj",
+			"Character.cpp.obj",
+			"TPAnimInstance.cpp.obj",
+			"TPCharacter.cpp.obj",
+			"TPGameModeBase.cpp.obj",
+			"TPHUD.cpp.obj",
+			"TPPlayerController.cpp.obj"
+		]
+	}
+}

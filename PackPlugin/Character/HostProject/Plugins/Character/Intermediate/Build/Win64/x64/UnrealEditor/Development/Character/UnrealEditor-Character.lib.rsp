@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-Character.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\PC\Documents\UnrealProjects\Back\UETeamProject\PackPlugin\Character\HostProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\Engine\SharedPCH.Engine.Cpp20.h.obj"
+"C:\Users\PC\Documents\UnrealProjects\Back\UETeamProject\PackPlugin\Character\HostProject\Plugins\Character\Intermediate\Build\Win64\x64\UnrealEditor\Development\Character\Module.Character.cpp.obj"
+"C:\Users\PC\Documents\UnrealProjects\Back\UETeamProject\PackPlugin\Character\HostProject\Plugins\Character\Intermediate\Build\Win64\x64\UnrealEditor\Development\Character\Default.rc2.res"
+/OUT:"C:\Users\PC\Documents\UnrealProjects\Back\UETeamProject\PackPlugin\Character\HostProject\Plugins\Character\Intermediate\Build\Win64\x64\UnrealEditor\Development\Character\UnrealEditor-Character.lib"
